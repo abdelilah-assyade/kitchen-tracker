@@ -35,3 +35,11 @@ def make_fried_egg(available_eggs):
 available_eggs = make_fried_egg(available_eggs)
 
 check_kitchen_stock()
+
+def restock_eggs(current_eggs,new_eggs):
+    total = current_eggs + new_eggs
+    print(f"Restocked {new_eggs} egg(s). Total eggs: {total}")
+    return total
+available_eggs = restock_eggs(available_eggs, 5)
+
+check_kitchen_stock()
